@@ -1,0 +1,102 @@
+// Work started by Iraj Date:12/19/2019----
+
+/* Slideshow container */  
+
+.slideshow-container{
+        
+       .mySlides{
+        position: relative;
+        max-width: 100%;
+        height: 50%;
+        margin:0 auto;
+        padding: 0;
+        h1{
+           
+            font-size: 2.6rem;
+            color: @Pink;
+            position: absolute;
+           text-transform: uppercase;
+            width: 100%;
+            text-align: right; 
+            top:8rem;
+           margin-left: -10rem;
+           background: rgb(0, 0, 0); /* fallback color */
+           background: rgba(0, 0, 0, 0.05);
+         
+           
+            
+          }
+          h2{
+            color:@white ;
+            font-size: 15px;
+            font-size: 2.3rem;
+            position: absolute;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: right; 
+            top:12rem;
+            margin-left: -10rem;
+            background: rgb(0, 0, 0); /* fallback color */
+            background: rgba(0, 0, 0, 0.05);
+            
+          }
+          button{
+            color:@Purple;
+            position: absolute;
+            text-align: center; 
+            top:18rem;
+            margin-left: -25rem;
+            text-transform: Uppercase;
+            padding:1rem;
+            background: @offPink;
+            width:85px;
+            &:hover{
+                background: @Pink;
+                color:@offPink;
+            }
+           
+          }
+          img{
+            width:100%;
+            height:400px; 
+        }
+
+       
+       } 
+    }
+
+// slider dot animation
+
+.dot{             
+    height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: @offPink;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; 
+  margin-bottom: 4rem; 
+}
+.active {
+    background-color:@lightHenna;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  } 
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+//----  Ended above  Iraj ,Date :12/19/2019----
+
+
+  

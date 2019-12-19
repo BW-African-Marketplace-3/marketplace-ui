@@ -1,0 +1,23 @@
+// Mixins in here
+
+// parametric functions
+.display-flex(@justify-content,@align-items){
+    display: flex;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+// button styling
+
+.butn(@color,@background,@border-radius){
+    color:@color;
+    background: @background;
+    border-radius: @border-radius;
+ 
+}
+//border styling
+.border(@size,@color,@style){
+    border-style: @style;
+    border:@size;
+    border-color: @color;
+}
