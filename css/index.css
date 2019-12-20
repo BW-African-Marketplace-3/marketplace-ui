@@ -207,6 +207,7 @@ footer .footer_nav {
   flex-direction: row-reverse;
   font-size: 2rem;
   padding: 2rem;
+  margin-bottom: 0;
 }
 footer .footer_nav p {
   color: #FEE1C7;
