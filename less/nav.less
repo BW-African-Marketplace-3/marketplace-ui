@@ -1,0 +1,28 @@
+
+   .nav_bar{
+       border-bottom:5px solid @Orange;
+       background: linear-gradient(to right,@Purple,@Orange); 
+        .display-flex(space-around,center);
+        flex-direction: row-reverse;
+        font-size: 2rem;
+        a{
+            color:@offPink;
+            text-decoration: none;
+            &:hover{
+             transform: scale(1.1);
+             color: @Pink;
+            }
+
+        }
+        .current{
+            color:@Pink;
+        }
+        
+       .logo-img{
+           img{width: 50%;
+        }
+           
+        } 
+       
+    }
+    

@@ -1,0 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.mySlides {
+  display: none;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 1px;
+}
+.nav_bar {
+  border-bottom: 5px solid #FA7E61;
+  background: linear-gradient(to right, #4C1E4F, #FA7E61);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+}
+.nav_bar a {
+  color: #FEE1C7;
+  text-decoration: none;
+}
+.nav_bar a:hover {
+  transform: scale(1.1);
+  color: #F44174;
+}
+.nav_bar .current {
+  color: #F44174;
+}
+.nav_bar .logo-img img {
+  width: 50%;
+}
+footer .footer_nav {
+  background: linear-gradient(to right, #F44174, #4C1E4F);
+  border-top: 5px solid #FA7E61;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 0;
+}
+footer .footer_nav p {
+  color: #FEE1C7;
+}
+/* Slideshow container */
+.slideshow-container .mySlides {
+  position: relative;
+  max-width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+.slideshow-container .mySlides h1 {
+  font-size: 2.6rem;
+  color: #F44174;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: right;
+  top: 8rem;
+  margin-left: -10rem;
+  background: #000000;
+  /* fallback color */
+  background: rgba(0, 0, 0, 0.05);
+}
+.slideshow-container .mySlides h2 {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-size: 2.3rem;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: right;
+  top: 12rem;
+  margin-left: -10rem;
+  background: #000000;
+  /* fallback color */
+  background: rgba(0, 0, 0, 0.05);
+}
+.slideshow-container .mySlides button {
+  color: #4C1E4F;
+  position: absolute;
+  text-align: center;
+  top: 18rem;
+  margin-left: -25rem;
+  text-transform: Uppercase;
+  padding: 1rem;
+  background: #FEE1C7;
+  width: 85px;
+}
+.slideshow-container .mySlides button:hover {
+  background: #F44174;
+  color: #FEE1C7;
+}
+.slideshow-container .mySlides img {
+  width: 100%;
+  height: 400px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FEE1C7;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 4rem;
+}
+.active {
+  background-color: #B5A886;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
