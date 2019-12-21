@@ -109,19 +109,29 @@
     h1 {
       font-family: 'Inria Serif', serif;
       .personalSpace();
+      margin-bottom: 2.5rem;
     }
 
     div {
       background-color: @offPink;
       border-radius: 20px;
       .personalSpace();
-      padding: 3rem 0;
+      padding: 2rem 0;
+
+          h3 {
+            font-size: 2.6rem;
+            padding-bottom: 1.5rem;
+          }
+
+          p {
+            padding: 0 1rem;
+          }
     }
 }
 
 .infoBoxes {
-  .display-flex(space-around, center);
-  margin: 8rem 0 15rem 0;
+  .display-flex(space-between, center);
+  margin: 5rem 0 15rem 0;
 
       div {
         width: 25rem;
@@ -130,6 +140,10 @@
         background-color: @Orange;
         border-radius: 20px;
         color: @Purple;
+
+            h4 {
+              color: @offPink;
+            }
       }
 }
 
