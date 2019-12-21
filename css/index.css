@@ -138,14 +138,14 @@ html {
 }
 html,
 body {
-  font-family: sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: sans-serif;
+  font-family: 'Inria Serif', serif;
 }
 h1 {
   font-size: 4rem;
@@ -309,6 +309,7 @@ footer .footer_nav p {
   text-align: center;
 }
 .lowerBody h1 {
+  font-family: 'Inria Serif', serif;
   margin: 1rem 0;
   padding: 1rem 0;
 }
@@ -323,7 +324,7 @@ footer .footer_nav p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10rem 0 20rem 0;
+  margin: 8rem 0 15rem 0;
 }
 .infoBoxes div {
   width: 25rem;
