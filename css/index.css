@@ -309,6 +309,11 @@ footer .footer_nav p {
   margin: auto;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .lowerBody {
+    width: 100%;
+  }
+}
 .lowerBody h1 {
   font-family: 'Inria Serif', serif;
   margin: 1rem 0;
@@ -335,15 +340,47 @@ footer .footer_nav p {
   align-items: center;
   margin: 5rem 0 15rem 0;
 }
+@media (min-width: 800px) {
+  .infoBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .infoBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
 .infoBoxes div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 25rem;
   height: 25rem;
   margin: 1rem 0;
   padding: 1rem 0;
-  background-color: #FA7E61;
-  border-radius: 20px;
+  background-color: #fff;
+  border: 4px #B5A886 solid;
+  border-radius: 10px;
   color: #4C1E4F;
 }
+@media (min-width: 800px) {
+  .infoBoxes div {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .infoBoxes div {
+    width: 100%;
+  }
+}
 .infoBoxes div h4 {
-  color: #FEE1C7;
+  color: #4C1E4F;
 }

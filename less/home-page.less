@@ -106,6 +106,10 @@
   margin: auto;
   text-align: center;
 
+    @media @phone {
+      width: 100%;
+    }
+
     h1 {
       font-family: 'Inria Serif', serif;
       .personalSpace();
@@ -133,18 +137,39 @@
   .display-flex(space-between, center);
   margin: 5rem 0 15rem 0;
 
-      div {
-        width: 25rem;
-        height: 25rem;
-        .personalSpace();
-        background-color: @Orange;
-        border-radius: 20px;
-        color: @Purple;
 
-            h4 {
-              color: @offPink;
-            }
+      @media @tablet {
+        .columnFlex(space-between, center);
       }
+
+      @media @phone {
+        .columnFlex(space-between, center);
+        margin: 0 auto;
+      }
+
+
+        div {
+          .columnFlex(space-around, center);
+          width: 25rem;
+          height: 25rem;
+          .personalSpace();
+          background-color: #fff;
+          border: 4px @lightHenna solid;
+          border-radius: 10px;
+          color: @Purple;
+
+            @media @tablet {
+              width: 50%;
+            }
+
+            @media @phone {
+              width: 100%;
+            }
+
+              h4 {
+                color: @Purple;
+              }
+        }
 }
 
 
