@@ -184,6 +184,7 @@ img {
   align-items: center;
   flex-direction: row-reverse;
   font-size: 2rem;
+  font-family: 'Inria Serif', serif;
 }
 .nav_bar a {
   color: #FEE1C7;
