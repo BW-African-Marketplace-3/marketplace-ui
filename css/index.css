@@ -206,6 +206,12 @@ img {
 .nav_bar .logo-img img {
   width: 50%;
 }
+.nav_bar .signIn,
+.nav_bar .signUp {
+  border: 2px #4C1E4F solid;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
 footer {
   font-family: 'Inria Serif', serif;
 }
@@ -355,6 +361,16 @@ footer .footer_nav p {
 .lowerBody div p {
   padding: 0 1rem;
 }
+@media (min-width: 501px) and (max-width: 1024px) {
+  .lowerBody .mobile-break {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .lowerBody .mobile-break {
+    display: none;
+  }
+}
 .infoBoxes {
   display: flex;
   justify-content: space-between;
@@ -362,7 +378,7 @@ footer .footer_nav p {
   flex-wrap: wrap;
   margin: 5rem 0 10rem 0;
 }
-@media (max-width: 1024px) {
+@media (min-width: 501px) and (max-width: 1024px) {
   .infoBoxes {
     display: flex;
     flex-direction: column;
@@ -392,7 +408,7 @@ footer .footer_nav p {
   border-radius: 10px;
   color: #4C1E4F;
 }
-@media (max-width: 1024px) {
+@media (min-width: 501px) and (max-width: 1024px) {
   .infoBoxes div {
     margin: 1rem 0.5rem;
   }

@@ -116,9 +116,10 @@
   margin: auto;
   text-align: center;
 
-    @media @phone {
-      width: 96%;
-    }
+      @media @phone {
+        width: 96%;
+      }
+
 
     h1 {
       font-family: 'Inria Serif', serif;
@@ -134,9 +135,6 @@
       .personalSpace();
       .boxShadow;
 
-          @media @phone {
-          }
-
           h3 {
             font-size: 2.6rem;
             padding-bottom: 1.5rem;
@@ -145,7 +143,23 @@
           p {
             padding: 0 1rem;
           }
-    }
+      }
+
+          @media @tablet {
+
+            .mobile-break {
+              display: none;
+            }
+
+          }
+
+          @media @desktop {
+
+            .mobile-break {
+              display: none;
+            }
+          }
+
 }
 
 .infoBoxes {
