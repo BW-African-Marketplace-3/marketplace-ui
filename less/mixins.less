@@ -7,6 +7,13 @@
     align-items: @align-items;
 }
 
+.columnFlex(@justify-content, @align-items) {
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
 // button styling
 
 .butn(@color,@background,@border-radius){
@@ -15,6 +22,9 @@
     border-radius: @border-radius;
  
 }
+
+
+
 //border styling
 .border(@size,@color,@style){
     border-style: @style;
@@ -22,9 +32,26 @@
     border-color: @color;
 }
 
+.boxShadow {
+    box-shadow: 10px 10px 5px 0px rgba(232,232,232,1);
+}
+
+
+
 // Spacing
 
 .personalSpace {
     margin: 1rem 0;
     padding: 1rem 0;
 }
+
+.prettyFont {
+    font-family: 'Inria Serif', serif;
+}
+
+
+
+
+
+
+

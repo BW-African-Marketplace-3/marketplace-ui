@@ -10,6 +10,7 @@
         height: 50%;
         margin:0 auto;
         padding: 0;
+
         h1{
            
             font-size: 2.6rem;
@@ -67,6 +68,11 @@
 
        
        } 
+
+       @media @phone {
+        display: none;
+      }
+
     }
 
 // slider dot animation
@@ -80,6 +86,10 @@
   display: inline-block;
   transition: background-color 0.6s ease; 
   margin-bottom: 4rem; 
+
+      @media @phone {
+              display: none;
+            }
 }
 .active {
     background-color:@lightHenna;
@@ -302,17 +312,27 @@
   margin: auto;
   text-align: center;
 
+    @media @phone {
+      width: 100%;
+    }
+
     h1 {
       font-family: 'Inria Serif', serif;
       .personalSpace();
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     div {
-      background-color: @offPink;
-      border-radius: 20px;
-      .personalSpace();
+      background-color: rgba(@rgbGreen, 0.3);
+      border: 2px solid rgba(@rgbOrange, 0.8);
+      border-radius: 10px;
       padding: 2rem 0;
+      .personalSpace();
+      .boxShadow;
+
+          @media @phone {
+            border-radius: 0;
+          }
 
           h3 {
             font-size: 2.6rem;
@@ -327,18 +347,53 @@
 
 .infoBoxes {
   .display-flex(space-between, center);
-  margin: 5rem 0 15rem 0;
+  margin: 5rem 0 10rem 0;
 
-      div {
-        width: 25rem;
-        height: 25rem;
-        .personalSpace();
-        background-color: @Orange;
-        border-radius: 20px;
-        color: @Purple;
 
-            h4 {
-              color: @offPink;
-            }
+      @media @tablet {
+        .columnFlex(space-between, center);
       }
+
+      @media @phone {
+        .columnFlex(space-between, center);
+      }
+
+
+        div {
+          .columnFlex(space-around, center);
+          width: 35rem;
+          height: 25rem;
+          .personalSpace();
+          background: rgba(@rgbGreen, 0.3);
+          border: 2px rgba(@rgbPink, 0.8) solid;
+          border-radius: 10px;
+          color: @Purple;
+
+            @media @tablet {
+              width: 25rem;
+              height: 20rem;
+              margin: 1rem .5rem;
+            }
+
+            @media @phone {
+              width: 100%;
+              margin: 2rem 0;
+              border-radius: 0;
+            }
+
+              h4 {
+                color: @Purple;
+
+                  @media @tablet {
+                    font-size: .5rem;
+                  }
+              }
+
+              // p {
+              //   font-size: 1rem;
+              // }
+        }
 }
+
+
+ 
