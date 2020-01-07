@@ -1,6 +1,12 @@
+.boxShadow {
+  box-shadow: 10px 10px 5px 0px #e8e8e8;
+}
 .personalSpace {
   margin: 1rem 0;
   padding: 1rem 0;
+}
+.prettyFont {
+  font-family: 'Inria Serif', serif;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -200,9 +206,11 @@ img {
 .nav_bar .logo-img img {
   width: 50%;
 }
+footer {
+  font-family: 'Inria Serif', serif;
+}
 footer .footer_nav {
-  background: linear-gradient(to right, #F44174, #4C1E4F);
-  border-top: 5px solid #FA7E61;
+  background: #4C1E4F;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -329,14 +337,21 @@ footer .footer_nav p {
   font-family: 'Inria Serif', serif;
   margin: 1rem 0;
   padding: 1rem 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 .lowerBody div {
-  background-color: #FEE1C7;
-  border-radius: 20px;
+  background-color: rgba(181, 168, 134, 0.3);
+  border: 2px solid rgba(250, 126, 97, 0.8);
+  border-radius: 10px;
+  padding: 2rem 0;
   margin: 1rem 0;
   padding: 1rem 0;
-  padding: 2rem 0;
+  box-shadow: 10px 10px 5px 0px #e8e8e8;
+}
+@media (max-width: 500px) {
+  .lowerBody div {
+    border-radius: 0;
+  }
 }
 .lowerBody div h3 {
   font-size: 2.6rem;
@@ -349,9 +364,9 @@ footer .footer_nav p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5rem 0 15rem 0;
+  margin: 5rem 0 10rem 0;
 }
-@media (min-width: 800px) {
+@media (min-width: 800px and max-width: 1024px) {
   .infoBoxes {
     display: flex;
     flex-direction: column;
@@ -365,7 +380,6 @@ footer .footer_nav p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
   }
 }
 .infoBoxes div {
@@ -373,25 +387,34 @@ footer .footer_nav p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 25rem;
+  width: 35rem;
   height: 25rem;
   margin: 1rem 0;
   padding: 1rem 0;
-  background-color: #fff;
-  border: 4px #B5A886 solid;
+  background: rgba(181, 168, 134, 0.3);
+  border: 2px rgba(244, 65, 116, 0.8) solid;
   border-radius: 10px;
   color: #4C1E4F;
 }
-@media (min-width: 800px) {
+@media (min-width: 800px and max-width: 1024px) {
   .infoBoxes div {
-    width: 50%;
+    width: 25rem;
+    height: 20rem;
+    margin: 1rem 0.5rem;
   }
 }
 @media (max-width: 500px) {
   .infoBoxes div {
     width: 100%;
+    margin: 2rem 0;
+    border-radius: 0;
   }
 }
 .infoBoxes div h4 {
   color: #4C1E4F;
+}
+@media (min-width: 800px and max-width: 1024px) {
+  .infoBoxes div h4 {
+    font-size: 0.5rem;
+  }
 }
