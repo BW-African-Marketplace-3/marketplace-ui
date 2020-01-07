@@ -312,9 +312,10 @@
   margin: auto;
   text-align: center;
 
-    @media @phone {
-      width: 100%;
-    }
+      @media @phone {
+        width: 96%;
+      }
+
 
     h1 {
       font-family: 'Inria Serif', serif;
@@ -330,10 +331,6 @@
       .personalSpace();
       .boxShadow;
 
-          @media @phone {
-            border-radius: 0;
-          }
-
           h3 {
             font-size: 2.6rem;
             padding-bottom: 1.5rem;
@@ -342,11 +339,28 @@
           p {
             padding: 0 1rem;
           }
-    }
+      }
+
+          @media @tablet {
+
+            .mobile-break {
+              display: none;
+            }
+
+          }
+
+          @media @desktop {
+
+            .mobile-break {
+              display: none;
+            }
+          }
+
 }
 
 .infoBoxes {
   .display-flex(space-between, center);
+  flex-wrap: wrap;
   margin: 5rem 0 10rem 0;
 
 
@@ -361,37 +375,25 @@
 
         div {
           .columnFlex(space-around, center);
+          .personalSpace();
           width: 35rem;
           height: 25rem;
-          .personalSpace();
           background: rgba(@rgbGreen, 0.3);
           border: 2px rgba(@rgbPink, 0.8) solid;
           border-radius: 10px;
           color: @Purple;
 
             @media @tablet {
-              width: 25rem;
-              height: 20rem;
               margin: 1rem .5rem;
             }
 
             @media @phone {
-              width: 100%;
               margin: 2rem 0;
-              border-radius: 0;
             }
 
               h4 {
                 color: @Purple;
-
-                  @media @tablet {
-                    font-size: .5rem;
-                  }
               }
-
-              // p {
-              //   font-size: 1rem;
-              // }
         }
 }
 
