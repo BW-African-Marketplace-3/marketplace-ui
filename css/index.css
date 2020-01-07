@@ -330,7 +330,7 @@ footer .footer_nav p {
 }
 @media (max-width: 500px) {
   .lowerBody {
-    width: 100%;
+    width: 96%;
   }
 }
 .lowerBody h1 {
@@ -347,11 +347,6 @@ footer .footer_nav p {
   margin: 1rem 0;
   padding: 1rem 0;
   box-shadow: 10px 10px 5px 0px #e8e8e8;
-}
-@media (max-width: 500px) {
-  .lowerBody div {
-    border-radius: 0;
-  }
 }
 .lowerBody div h3 {
   font-size: 2.6rem;
@@ -404,9 +399,7 @@ footer .footer_nav p {
 }
 @media (max-width: 500px) {
   .infoBoxes div {
-    width: 100%;
     margin: 2rem 0;
-    border-radius: 0;
   }
 }
 .infoBoxes div h4 {
