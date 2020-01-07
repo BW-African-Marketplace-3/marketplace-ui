@@ -151,6 +151,7 @@
 
 .infoBoxes {
   .display-flex(space-between, center);
+  flex-wrap: wrap;
   margin: 5rem 0 10rem 0;
 
 
@@ -165,17 +166,15 @@
 
         div {
           .columnFlex(space-around, center);
+          .personalSpace();
           width: 35rem;
           height: 25rem;
-          .personalSpace();
           background: rgba(@rgbGreen, 0.3);
           border: 2px rgba(@rgbPink, 0.8) solid;
           border-radius: 10px;
           color: @Purple;
 
             @media @tablet {
-              width: 25rem;
-              height: 20rem;
               margin: 1rem .5rem;
             }
 
@@ -187,15 +186,7 @@
 
               h4 {
                 color: @Purple;
-
-                  @media @tablet {
-                    font-size: .5rem;
-                  }
               }
-
-              // p {
-              //   font-size: 1rem;
-              // }
         }
 }
 

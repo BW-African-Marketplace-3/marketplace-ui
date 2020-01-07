@@ -364,9 +364,10 @@ footer .footer_nav p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 5rem 0 10rem 0;
 }
-@media (min-width: 800px and max-width: 1024px) {
+@media (max-width: 1024px) {
   .infoBoxes {
     display: flex;
     flex-direction: column;
@@ -387,19 +388,17 @@ footer .footer_nav p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 35rem;
-  height: 25rem;
   margin: 1rem 0;
   padding: 1rem 0;
+  width: 35rem;
+  height: 25rem;
   background: rgba(181, 168, 134, 0.3);
   border: 2px rgba(244, 65, 116, 0.8) solid;
   border-radius: 10px;
   color: #4C1E4F;
 }
-@media (min-width: 800px and max-width: 1024px) {
+@media (max-width: 1024px) {
   .infoBoxes div {
-    width: 25rem;
-    height: 20rem;
     margin: 1rem 0.5rem;
   }
 }
@@ -412,9 +411,4 @@ footer .footer_nav p {
 }
 .infoBoxes div h4 {
   color: #4C1E4F;
-}
-@media (min-width: 800px and max-width: 1024px) {
-  .infoBoxes div h4 {
-    font-size: 0.5rem;
-  }
 }
