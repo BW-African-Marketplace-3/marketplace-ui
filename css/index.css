@@ -216,6 +216,16 @@ img {
   padding: 0.8rem;
   border-radius: 4px;
 }
+@media (min-width: 1025px) {
+  .icon {
+    display: none;
+  }
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+  .icon {
+    display: none;
+  }
+}
 footer {
   font-family: 'Inria Serif', serif;
 }
@@ -337,7 +347,6 @@ footer .footer_nav p {
     opacity: 1;
   }
 }
-
 .main-heading {
   margin: 7.8rem;
 }
@@ -512,7 +521,6 @@ footer .footer_nav p {
 .signin-main form input {
   padding: 1rem;
 }
-
 /************ MichelleRH ******************/
 .lowerBody {
   width: 75%;
