@@ -39,6 +39,38 @@
 
     //Mobile Nav...Started by Michelle RH on 01/07/2020
 
+.mobileNav {
+    .display-flex(space-between, center);
+    flex-direction: row-reverse;
+    background-color: @lightHenna;
+    // padding: 1rem;
+    width: 100%;
+
+        .tab {
+            .display-flex(center, center);
+            background-color: @lightHenna;
+            padding: 0 20px;
+            margin: 0 10px;
+        }
+
+        .active {
+            // margin-left: 10px;
+            padding: 1rem;
+            // max-width: 200px;
+            background-color: @Orange;
+        }
+
+}
+
+
+
+
+            
+
+
+
+
+
 @media @desktop {
     .mobileNav {
         display: none;
@@ -50,9 +82,3 @@
         display: none;
     }
 }  
-
-@media @phone {
-    nav p {
-        display: none;
-    }
-}

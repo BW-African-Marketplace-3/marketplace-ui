@@ -216,6 +216,26 @@ img {
   padding: 0.8rem;
   border-radius: 4px;
 }
+.mobileNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: #B5A886;
+  width: 100%;
+}
+.mobileNav .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B5A886;
+  padding: 0 20px;
+  margin: 0 10px;
+}
+.mobileNav .active {
+  padding: 1rem;
+  background-color: #FA7E61;
+}
 @media (min-width: 1025px) {
   .mobileNav {
     display: none;
@@ -223,11 +243,6 @@ img {
 }
 @media (min-width: 501px) and (max-width: 1024px) {
   .mobileNav {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  nav p {
     display: none;
   }
 }
