@@ -28,10 +28,61 @@
        
         .signIn,
         .signUp {
+            box-shadow: 3px 4px 7px -1px rgba(76,30,79,1);
+            background-color: @Orange;
             border: 2px @Purple solid;
+            color: offPink;
             padding: .8rem;
             border-radius: 4px;
         }
 
     }
-    
+
+
+
+    //Mobile Nav...Started by Michelle RH on 01/07/2020
+
+.mobileNav {
+    .display-flex(space-between, center);
+    flex-direction: row-reverse;
+    background-color: @lightHenna;
+    width: 100%;
+
+        .tab {
+            .display-flex(center, center);
+            background-color: @lightHenna;
+            padding: 1rem 2rem;
+        }
+
+        .active {
+            background-color: @Orange;
+        }
+
+}
+
+
+
+
+            
+
+// Queries for navigations
+
+
+
+@media @desktop {
+    .mobileNav {
+        display: none;
+    }
+}
+
+@media @tablet {
+    .mobileNav {
+        display: none;
+    }
+}  
+
+@media @phone {
+    nav a {
+        visibility: hidden;
+    }
+}
