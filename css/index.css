@@ -229,11 +229,9 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #B5A886;
-  padding: 0 20px;
-  margin: 0 10px;
+  padding: 1rem 2rem;
 }
 .mobileNav .active {
-  padding: 1rem;
   background-color: #FA7E61;
 }
 @media (min-width: 1025px) {
@@ -244,6 +242,11 @@ img {
 @media (min-width: 501px) and (max-width: 1024px) {
   .mobileNav {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  nav a {
+    visibility: hidden;
   }
 }
 footer {
