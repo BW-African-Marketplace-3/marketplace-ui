@@ -224,7 +224,7 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-  background-color: #B5A886;
+  background-color: rgba(181, 168, 134, 0.9);
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -236,11 +236,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #B5A886;
   padding: 1rem 2rem;
 }
 .mobileNav .active {
-  background-color: #FA7E61;
+  background-color: rgba(250, 126, 97, 0.8);
 }
 @media (min-width: 1025px) {
   .mobileNav {
@@ -285,7 +284,7 @@ footer .footer_nav p {
 @media (max-width: 500px) {
   footer .footer_nav {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 6.8rem;
   }
 }
 /* Slideshow container */
