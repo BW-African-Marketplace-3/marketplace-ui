@@ -226,6 +226,11 @@ img {
   flex-direction: row-reverse;
   background-color: #B5A886;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 .mobileNav .tab {
   display: flex;
@@ -280,6 +285,7 @@ footer .footer_nav p {
 @media (max-width: 500px) {
   footer .footer_nav {
     width: 100%;
+    margin-bottom: 4rem;
   }
 }
 /* Slideshow container */
@@ -386,7 +392,6 @@ footer .footer_nav p {
     opacity: 1;
   }
 }
-
 .about-page {
   background: whitesmoke;
 }
