@@ -184,10 +184,10 @@ img {
 .container {
   max-width: 100%;
   width: 100%;
-  margin: 1px;
+  margin: 0px;
 }
 .nav_bar {
-  border-bottom: 5px solid #FA7E61;
+  border-bottom: 4px solid #FA7E61;
   background: linear-gradient(to right, #4C1E4F, #FA7E61);
   display: flex;
   justify-content: space-around;
@@ -392,7 +392,7 @@ footer .footer_nav p {
   }
 }
 .about-page {
-  background: whitesmoke;
+  background: lightgrey;
 }
 .main-heading {
   margin: 7.8rem;
@@ -416,6 +416,7 @@ footer .footer_nav p {
 }
 .main-heading h1:hover {
   background: #966796;
+  color: #FFFFFF;
 }
 .card-wrapper {
   display: grid;
@@ -485,13 +486,18 @@ footer .footer_nav p {
 @media (min-width: 501px) and (max-width: 1024px) {
   .card-container .card-img img {
     width: 60%;
-    margin-left: 5.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 500px) {
   .card-container .card-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
-    margin-left: 4.8rem;
+    height: 170px;
   }
 }
 .card-container .card-text {
@@ -509,20 +515,42 @@ footer .footer_nav p {
   margin-top: 1px;
   font-family: 'cursive';
 }
+@media (min-width: 501px) and (max-width: 1024px) {
+  .card-container .card-text h4 {
+    font-size: 2rem;
+  }
+}
 .card-container .card-text p {
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+  .card-container .card-text p {
+    font-size: 1.5rem;
+  }
 }
 .card-container .card-text .contact {
   margin: 1rem;
 }
 .card-container .card-text .contact a {
   color: #FFFFFF;
-  margin-right: 1px;
+  margin: 0.5rem;
   font-size: 1.8rem;
 }
 .card-container .card-text .contact a:hover {
   color: lightgray;
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+  .card-container .card-text .contact a {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .card-container .card-text .contact a {
+    margin: 1rem;
+    font-size: 2rem;
+  }
 }
 @keyframes bounce {
   0%,
@@ -552,8 +580,8 @@ footer .footer_nav p {
   animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
 }
 .card-img > img:hover {
   cursor: pointer;
