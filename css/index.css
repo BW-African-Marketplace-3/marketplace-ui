@@ -184,7 +184,7 @@ img {
 .container {
   max-width: 100%;
   width: 100%;
-  margin: 1px;
+  margin: 0px;
 }
 .nav_bar {
   border-bottom: 4px solid #FA7E61;
